@@ -572,7 +572,7 @@ export function GanttChart() {
       }
     }
     const normalizedMax = maxRow - minRow;
-    const rowCount = Math.ceil(normalizedMax + 1);
+    const rowCount = normalizedMax + 1;
     teamRowData.push({ team, rowCount, taskRowMap });
   }
 
